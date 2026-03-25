@@ -1,0 +1,13 @@
+{
+  "version": "v2.9.0-beta.3",
+  "id": "8aee8b42-f15b-42d7-b3a8-f7ee846b6a23",
+  "repositoryID": "00000000-0000-0000-0000-000000000000",
+  "repositoryName": "",
+  "workspaceID": "00000000-0000-0000-0000-000000000000",
+  "workspaceName": "",
+  "status": "error",
+  "errors": "{HORUSEC_CLI} Error while running tool HorusecEngine: open /home/HsuShun/superset/.horusec/8aee8b42-f15b-42d7-b3a8-f7ee846b6a23/superset/examples/configs/charts/Featured Charts/Box_Plot.yaml: too many open files;{HORUSEC_CLI} Error while running tool HorusecEngine: open /home/HsuShun/superset/.horusec/8aee8b42-f15b-42d7-b3a8-f7ee846b6a23/superset-frontend/cypress-base/cypress/e2e/dashboard/shared_dashboard_functions.ts: too many open files;{HORUSEC_CLI} Error while running tool HorusecEngine: open /home/HsuShun/superset/.horusec/8aee8b42-f15b-42d7-b3a8-f7ee846b6a23/superset-frontend/plugins/legacy-plugin-chart-rose/src/ReactRose.jsx: too many open files",
+  "createdAt": "2025-07-10T08:20:10.335261223Z",
+  "finishedAt": "2025-07-10T08:22:50.382413463Z",
+  "analysisVulnerabilities": null
+}

@@ -1,0 +1,481 @@
+{
+  "version": "v2.9.0-beta.3",
+  "id": "579e2208-1bc5-4335-b764-c5d63468caee",
+  "repositoryID": "00000000-0000-0000-0000-000000000000",
+  "repositoryName": "",
+  "workspaceID": "00000000-0000-0000-0000-000000000000",
+  "workspaceName": "",
+  "status": "error",
+  "errors": "{HORUSEC_CLI} Error while running tool HorusecEngine: open /home/HsuShun/superset/.horusec/579e2208-1bc5-4335-b764-c5d63468caee/superset-frontend/packages/superset-ui-core/test/number-format/factories/createDurationFormatter.test.ts: too many open files;{HORUSEC_CLI} Error while running tool HorusecEngine: open /home/HsuShun/superset/.horusec/579e2208-1bc5-4335-b764-c5d63468caee/superset-frontend/src/dashboard/reducers/sliceEntities.test.js: too many open files",
+  "createdAt": "2025-07-10T08:26:05.111697593Z",
+  "finishedAt": "2025-07-10T08:29:18.155015367Z",
+  "analysisVulnerabilities": [
+    {
+      "vulnerabilityID": "00000000-0000-0000-0000-000000000000",
+      "analysisID": "579e2208-1bc5-4335-b764-c5d63468caee",
+      "createdAt": "2025-07-10T08:29:18.155052824Z",
+      "vulnerabilities": {
+        "vulnerabilityID": "615a7027-fc60-4070-945b-26c8b976a9da",
+        "line": "0",
+        "column": "0",
+        "confidence": "MEDIUM",
+        "file": "RELEASING/Dockerfile.from_local_tarball",
+        "code": "root user",
+        "details": "(1/1) * Possible vulnerability detected: MissConfiguration\n      Running containers with 'root' user can lead to a container escape situation. It is a best practice to run containers as non-root users, which can be done by adding a 'USER' statement to the Dockerfile.\n      Message: Specify at least 1 USER command in Dockerfile with non-root user as argument\n      Resolution: Add 'USER \u003cnon root user name\u003e' line to the Dockerfile\n      References: [https://docs.docker.com/develop/develop-images/dockerfile_best-practices/ https://avd.aquasec.com/appshield/ds002]",
+        "securityTool": "Trivy",
+        "language": "Generic",
+        "severity": "HIGH",
+        "type": "Vulnerability",
+        "commitAuthor": "-",
+        "commitEmail": "-",
+        "commitHash": "-",
+        "commitMessage": "-",
+        "commitDate": "-",
+        "rule_id": "",
+        "vulnHash": "e5f83e9d45d04c787ecdb8ea5e304ba8a60f7799a1189faaf431960cb7bf211b",
+        "deprecatedHashes": [
+          "3424168469cebc7a527510348d4960d351db90cc56185870d3df2b8661c8aa6d",
+          "b2ff09215bde80ead0c4c19f45a2975c6eb7bd0c0676827d9ce9c4667c424f7a"
+        ],
+        "securityToolVersion": "",
+        "securityToolInfoUri": ""
+      }
+    },
+    {
+      "vulnerabilityID": "00000000-0000-0000-0000-000000000000",
+      "analysisID": "579e2208-1bc5-4335-b764-c5d63468caee",
+      "createdAt": "2025-07-10T08:29:18.1550585Z",
+      "vulnerabilities": {
+        "vulnerabilityID": "87598c64-8572-4435-a1f4-2f74695164cd",
+        "line": "0",
+        "column": "0",
+        "confidence": "MEDIUM",
+        "file": "RELEASING/Dockerfile.from_svn_tarball",
+        "code": "root user",
+        "details": "(1/1) * Possible vulnerability detected: MissConfiguration\n      Running containers with 'root' user can lead to a container escape situation. It is a best practice to run containers as non-root users, which can be done by adding a 'USER' statement to the Dockerfile.\n      Message: Specify at least 1 USER command in Dockerfile with non-root user as argument\n      Resolution: Add 'USER \u003cnon root user name\u003e' line to the Dockerfile\n      References: [https://docs.docker.com/develop/develop-images/dockerfile_best-practices/ https://avd.aquasec.com/appshield/ds002]",
+        "securityTool": "Trivy",
+        "language": "Generic",
+        "severity": "HIGH",
+        "type": "Vulnerability",
+        "commitAuthor": "-",
+        "commitEmail": "-",
+        "commitHash": "-",
+        "commitMessage": "-",
+        "commitDate": "-",
+        "rule_id": "",
+        "vulnHash": "9e68dbef5773999767147a591f11473681bf60f343a39a71b0b3eee6c1117062",
+        "deprecatedHashes": [
+          "921f313b16ddbf140f20dfbaa8e649f51dde0655ed60179247c10f700266262c",
+          "8a09e009c8ae078fc519ae07666c249328a045431f84d503eafea1cf27b9187e"
+        ],
+        "securityToolVersion": "",
+        "securityToolInfoUri": ""
+      }
+    },
+    {
+      "vulnerabilityID": "00000000-0000-0000-0000-000000000000",
+      "analysisID": "579e2208-1bc5-4335-b764-c5d63468caee",
+      "createdAt": "2025-07-10T08:29:18.155063276Z",
+      "vulnerabilities": {
+        "vulnerabilityID": "4e9f34dc-5a42-4f0e-ac2c-86f0776e15a2",
+        "line": "0",
+        "column": "0",
+        "confidence": "MEDIUM",
+        "file": "RELEASING/Dockerfile.make_docs",
+        "code": "root user",
+        "details": "(1/1) * Possible vulnerability detected: MissConfiguration\n      Running containers with 'root' user can lead to a container escape situation. It is a best practice to run containers as non-root users, which can be done by adding a 'USER' statement to the Dockerfile.\n      Message: Specify at least 1 USER command in Dockerfile with non-root user as argument\n      Resolution: Add 'USER \u003cnon root user name\u003e' line to the Dockerfile\n      References: [https://docs.docker.com/develop/develop-images/dockerfile_best-practices/ https://avd.aquasec.com/appshield/ds002]",
+        "securityTool": "Trivy",
+        "language": "Generic",
+        "severity": "HIGH",
+        "type": "Vulnerability",
+        "commitAuthor": "-",
+        "commitEmail": "-",
+        "commitHash": "-",
+        "commitMessage": "-",
+        "commitDate": "-",
+        "rule_id": "",
+        "vulnHash": "7ba6b98be19dd5690a5de6d910dcaab40485219b6e7434ffcf830e0f096da5e8",
+        "deprecatedHashes": [
+          "7579dc883488c73dbfd2e5a195dafe89609c1b55ffde9ebc482e33feb3cc7610",
+          "3ce29cabd8d8636312902961d54797bc30c79370fc0bd538a77d9c2c213296f1"
+        ],
+        "securityToolVersion": "",
+        "securityToolInfoUri": ""
+      }
+    },
+    {
+      "vulnerabilityID": "00000000-0000-0000-0000-000000000000",
+      "analysisID": "579e2208-1bc5-4335-b764-c5d63468caee",
+      "createdAt": "2025-07-10T08:29:18.155067685Z",
+      "vulnerabilities": {
+        "vulnerabilityID": "ecede256-4cc8-4230-a18b-8fbc220e407a",
+        "line": "0",
+        "column": "0",
+        "confidence": "MEDIUM",
+        "file": "RELEASING/Dockerfile.make_tarball",
+        "code": "root user",
+        "details": "(1/1) * Possible vulnerability detected: MissConfiguration\n      Running containers with 'root' user can lead to a container escape situation. It is a best practice to run containers as non-root users, which can be done by adding a 'USER' statement to the Dockerfile.\n      Message: Specify at least 1 USER command in Dockerfile with non-root user as argument\n      Resolution: Add 'USER \u003cnon root user name\u003e' line to the Dockerfile\n      References: [https://docs.docker.com/develop/develop-images/dockerfile_best-practices/ https://avd.aquasec.com/appshield/ds002]",
+        "securityTool": "Trivy",
+        "language": "Generic",
+        "severity": "HIGH",
+        "type": "Vulnerability",
+        "commitAuthor": "-",
+        "commitEmail": "-",
+        "commitHash": "-",
+        "commitMessage": "-",
+        "commitDate": "-",
+        "rule_id": "",
+        "vulnHash": "2717c4dab85f53b10db5143527eafd7ce34d3a8ad0d36d63652bc09bdc92dbe6",
+        "deprecatedHashes": [
+          "fbb1a7073da413deeab8445bb9baa35325fd751f800ee2e7b46765bf9ac67748",
+          "fe044021c7a40e8fab980cd40ab2d92224425db4420e00087ac2751de0e7b1a5"
+        ],
+        "securityToolVersion": "",
+        "securityToolInfoUri": ""
+      }
+    },
+    {
+      "vulnerabilityID": "00000000-0000-0000-0000-000000000000",
+      "analysisID": "579e2208-1bc5-4335-b764-c5d63468caee",
+      "createdAt": "2025-07-10T08:29:18.155223193Z",
+      "vulnerabilities": {
+        "vulnerabilityID": "88df5cfc-bdec-457b-8bd0-3d5e533ccdb1",
+        "line": "3380",
+        "column": "0",
+        "confidence": "MEDIUM",
+        "file": "superset-frontend/cypress-base/package-lock.json",
+        "code": "      \"resolved\": \"https://registry.npmjs.org/@types/d3-color/-/d3-color-1.4.1.tgz\",\n\tInstalled Version: \"1.4.1\"\n\tUpdate to Version: \"3.1.0\" for fix this issue.",
+        "details": "(1/1) * Possible vulnerability detected: The d3-color module provides representations for various color spaces in the browser. Versions prior to 3.1.0 are vulnerable to a Regular expression Denial of Service. This issue has been patched in version 3.1.0. There are no known workarounds.\nPrimaryURL: https://github.com/advisories/GHSA-36jr-mh4h-2g58.",
+        "securityTool": "Trivy",
+        "language": "Generic",
+        "severity": "HIGH",
+        "type": "Vulnerability",
+        "commitAuthor": "-",
+        "commitEmail": "-",
+        "commitHash": "-",
+        "commitMessage": "-",
+        "commitDate": "-",
+        "rule_id": "GHSA-36jr-mh4h-2g58",
+        "vulnHash": "4187b6b8f78d3859494ec4addd0ec6faa319f5d9952ad78e8ad72b825c68ad88",
+        "deprecatedHashes": [
+          "d1304a5af74c18f0fed139da61c9a90781f5594c92e5a1446df364272252ec2b",
+          "41444b72d29792ef8f0524abbe184b0c4fddcf3adadfb5c9ffbdcf882fc32022",
+          "2c64c0ddeba9cf6954b0654c4305575e98ebbebb7dd661cbfcb962116e5579d6",
+          "b182a2172969832768efaf8fc468f2b240073a4965a611d6927b855ec03d29f5"
+        ],
+        "securityToolVersion": "",
+        "securityToolInfoUri": ""
+      }
+    },
+    {
+      "vulnerabilityID": "00000000-0000-0000-0000-000000000000",
+      "analysisID": "579e2208-1bc5-4335-b764-c5d63468caee",
+      "createdAt": "2025-07-10T08:29:18.155259608Z",
+      "vulnerabilities": {
+        "vulnerabilityID": "666314b5-d1c3-4476-82b1-f6e171a6f9d5",
+        "line": "281",
+        "column": "0",
+        "confidence": "HIGH",
+        "file": "RELEASING/changelog.py",
+        "code": "280     def _git_checkout(self, git_ref: str) -\u003e None:\n281         os.popen(f\"git checkout {git_ref}",
+        "details": "(1/1) * Possible vulnerability detected: Starting a process with a shell, possible injection detected, security issue.",
+        "securityTool": "Bandit",
+        "language": "Python",
+        "severity": "HIGH",
+        "type": "Vulnerability",
+        "commitAuthor": "-",
+        "commitEmail": "-",
+        "commitHash": "-",
+        "commitMessage": "-",
+        "commitDate": "-",
+        "rule_id": "B605",
+        "vulnHash": "6dd89c7ec914d4e5525a9e51e9100b67319d701eedb0257878a963b89a5c2373",
+        "deprecatedHashes": [
+          "8593e04bc42aacb114955fb50e77c0bc2bc392750e47a74d96c984590fa38b4d",
+          "56b1bea2431742acab3c9fe0a54776ce1fa76afc530de845f8c024142ae1dd6d"
+        ],
+        "securityToolVersion": "",
+        "securityToolInfoUri": ""
+      }
+    },
+    {
+      "vulnerabilityID": "00000000-0000-0000-0000-000000000000",
+      "analysisID": "579e2208-1bc5-4335-b764-c5d63468caee",
+      "createdAt": "2025-07-10T08:29:18.155324274Z",
+      "vulnerabilities": {
+        "vulnerabilityID": "5772e697-f46c-488b-a60d-fa1639f96935",
+        "line": "50",
+        "column": "0",
+        "confidence": "HIGH",
+        "file": "scripts/check-env.py",
+        "code": "49         try:\n50             version = subprocess.check_output(self.command, shell=True).decode().",
+        "details": "(1/1) * Possible vulnerability detected: subprocess call with shell=True identified, security issue.",
+        "securityTool": "Bandit",
+        "language": "Python",
+        "severity": "HIGH",
+        "type": "Vulnerability",
+        "commitAuthor": "-",
+        "commitEmail": "-",
+        "commitHash": "-",
+        "commitMessage": "-",
+        "commitDate": "-",
+        "rule_id": "B602",
+        "vulnHash": "c18b608713f8bc885eef936266c81fc47e8c7eda4fca58215deea557e99cefe7",
+        "deprecatedHashes": [
+          "c2e03f975c7bfcc3271858086634c18a19431b430caa4e598e330d5a1da61de4",
+          "7205d92eabb092f5b33b4c6af3e13c5695475dc035d312b1c0b9c74e63504fae"
+        ],
+        "securityToolVersion": "",
+        "securityToolInfoUri": ""
+      }
+    },
+    {
+      "vulnerabilityID": "00000000-0000-0000-0000-000000000000",
+      "analysisID": "579e2208-1bc5-4335-b764-c5d63468caee",
+      "createdAt": "2025-07-10T08:29:18.155341666Z",
+      "vulnerabilities": {
+        "vulnerabilityID": "6442672d-22db-4b0d-9031-11a5e48edfc4",
+        "line": "83",
+        "column": "0",
+        "confidence": "HIGH",
+        "file": "scripts/cypress_run.py",
+        "code": "82             cmd,\n83             shell=True,\n84             stdout=subprocess.PIPE,\n85            ",
+        "details": "(1/1) * Possible vulnerability detected: subprocess call with shell=True identified, security issue.",
+        "securityTool": "Bandit",
+        "language": "Python",
+        "severity": "HIGH",
+        "type": "Vulnerability",
+        "commitAuthor": "-",
+        "commitEmail": "-",
+        "commitHash": "-",
+        "commitMessage": "-",
+        "commitDate": "-",
+        "rule_id": "B602",
+        "vulnHash": "6c0508dc208ccc8f620f9edfc05e120fb721585ae92dfd147dbd3a33c4e22de3",
+        "deprecatedHashes": [
+          "2f2dbd574778fb91dbec6304bf76ea4b5876eaf0f9618d3b26857931fcddaec0",
+          "bfe4f25c84ea152fbcc1deddc84479f97a76bacf45e7754c00098a4698635805"
+        ],
+        "securityToolVersion": "",
+        "securityToolInfoUri": ""
+      }
+    },
+    {
+      "vulnerabilityID": "00000000-0000-0000-0000-000000000000",
+      "analysisID": "579e2208-1bc5-4335-b764-c5d63468caee",
+      "createdAt": "2025-07-10T08:29:18.155346418Z",
+      "vulnerabilities": {
+        "vulnerabilityID": "cfe914a0-7df5-4a33-8787-bd7e5b52269a",
+        "line": "174",
+        "column": "0",
+        "confidence": "HIGH",
+        "file": "scripts/erd/erd.py",
+        "code": "173     templates_path = os.path.dirname(__file__)\n174     env = jinja2.Environment(loader=jinja2.Fi",
+        "details": "(1/1) * Possible vulnerability detected: By default, jinja2 sets autoescape to False. Consider using autoescape=True or use the select_autoescape function to mitigate XSS vulnerabilities.",
+        "securityTool": "Bandit",
+        "language": "Python",
+        "severity": "HIGH",
+        "type": "Vulnerability",
+        "commitAuthor": "-",
+        "commitEmail": "-",
+        "commitHash": "-",
+        "commitMessage": "-",
+        "commitDate": "-",
+        "rule_id": "B701",
+        "vulnHash": "08eb2c4f3e4163f7404e56db14a363c6430a3bfcefb971342494fe58e4b69b28",
+        "deprecatedHashes": [
+          "d29d3839c8ca7511e1093ce9a7b2350e6abd0b4965a8259fd8702e479339a210",
+          "a072baa1438e35463864cd98c8d8245614fd3b9eed6e84799c3feb21b5767a59"
+        ],
+        "securityToolVersion": "",
+        "securityToolInfoUri": ""
+      }
+    },
+    {
+      "vulnerabilityID": "00000000-0000-0000-0000-000000000000",
+      "analysisID": "579e2208-1bc5-4335-b764-c5d63468caee",
+      "createdAt": "2025-07-10T08:29:18.155609174Z",
+      "vulnerabilities": {
+        "vulnerabilityID": "b0d70b2c-6d19-4c6d-a6de-81c9145e62eb",
+        "line": "70",
+        "column": "0",
+        "confidence": "HIGH",
+        "file": "superset/key_value/utils.py",
+        "code": "69 def get_uuid_namespace(seed: str) -\u003e UUID:\n70     md5_obj = md5()  # noqa: S324\n71     md5_obj.up",
+        "details": "(1/1) * Possible vulnerability detected: Use of weak MD4, MD5, or SHA1 hash for security. Consider usedforsecurity=False",
+        "securityTool": "Bandit",
+        "language": "Python",
+        "severity": "HIGH",
+        "type": "Vulnerability",
+        "commitAuthor": "-",
+        "commitEmail": "-",
+        "commitHash": "-",
+        "commitMessage": "-",
+        "commitDate": "-",
+        "rule_id": "B324",
+        "vulnHash": "d87457f8dc258028164e2126b819aa945db3ef437af24e0ead7e4ed05f6a02d3",
+        "deprecatedHashes": [
+          "87ae4f0c412bd62b41f1bcf7faef36d2b63dfe28b7da9f4e4e7f692aea209f1c",
+          "4f1fe4f4d70166f2a6c84a12c49af311817e402c005022ab72e81c0c3ad6cfd7"
+        ],
+        "securityToolVersion": "",
+        "securityToolInfoUri": ""
+      }
+    },
+    {
+      "vulnerabilityID": "00000000-0000-0000-0000-000000000000",
+      "analysisID": "579e2208-1bc5-4335-b764-c5d63468caee",
+      "createdAt": "2025-07-10T08:29:18.155761027Z",
+      "vulnerabilities": {
+        "vulnerabilityID": "03d0d284-c938-4d1a-9ba2-8a5fc4aecfda",
+        "line": "177",
+        "column": "0",
+        "confidence": "HIGH",
+        "file": "superset/migrations/versions/2024-05-10_18-02_f84fde59123a_update_charts_with_old_time_comparison.py",
+        "code": "176             # Generate filterOptionName\n177             random_string = md5(comparator_str.encod",
+        "details": "(1/1) * Possible vulnerability detected: Use of weak MD4, MD5, or SHA1 hash for security. Consider usedforsecurity=False",
+        "securityTool": "Bandit",
+        "language": "Python",
+        "severity": "HIGH",
+        "type": "Vulnerability",
+        "commitAuthor": "-",
+        "commitEmail": "-",
+        "commitHash": "-",
+        "commitMessage": "-",
+        "commitDate": "-",
+        "rule_id": "B324",
+        "vulnHash": "49ff57648b8a9c009240e7564e10e78ff8664412a68d1b50639bd32caf0a783c",
+        "deprecatedHashes": [
+          "454e5eaec21befc6b970f26f963b907ee0cbc09b0f06bb6128977028c47fcfd8",
+          "ce789382aad7d95b09e062d1e3941b5cfba760013656d92c8430287783db310c"
+        ],
+        "securityToolVersion": "",
+        "securityToolInfoUri": ""
+      }
+    },
+    {
+      "vulnerabilityID": "00000000-0000-0000-0000-000000000000",
+      "analysisID": "579e2208-1bc5-4335-b764-c5d63468caee",
+      "createdAt": "2025-07-10T08:29:18.155814725Z",
+      "vulnerabilities": {
+        "vulnerabilityID": "2e7b81fd-466e-40d1-bd4a-559ee9b7669f",
+        "line": "24",
+        "column": "0",
+        "confidence": "HIGH",
+        "file": "superset/utils/hashing.py",
+        "code": "23 def md5_sha_from_str(val: str) -\u003e str:\n24     return hashlib.md5(val.encode(\"utf-8\")).hexdigest()",
+        "details": "(1/1) * Possible vulnerability detected: Use of weak MD4, MD5, or SHA1 hash for security. Consider usedforsecurity=False",
+        "securityTool": "Bandit",
+        "language": "Python",
+        "severity": "HIGH",
+        "type": "Vulnerability",
+        "commitAuthor": "-",
+        "commitEmail": "-",
+        "commitHash": "-",
+        "commitMessage": "-",
+        "commitDate": "-",
+        "rule_id": "B324",
+        "vulnHash": "d31a87f93b1adce5ce19b1b87b21dd8e4f1ea47fb4c4006b5834fb6e861ec290",
+        "deprecatedHashes": [
+          "50ca09e064cf1a88e3f6790281b3684269cdc4a6387240035ae9ac15c98039d1",
+          "5482761dc95932da5c4b5fdcf47db97827ee2903ff3f3f3103dea70bd26180ef"
+        ],
+        "securityToolVersion": "",
+        "securityToolInfoUri": ""
+      }
+    },
+    {
+      "vulnerabilityID": "00000000-0000-0000-0000-000000000000",
+      "analysisID": "579e2208-1bc5-4335-b764-c5d63468caee",
+      "createdAt": "2025-07-10T08:29:18.155912412Z",
+      "vulnerabilities": {
+        "vulnerabilityID": "29e3d92e-e4d0-4638-85e5-3949c3115370",
+        "line": "43",
+        "column": "0",
+        "confidence": "HIGH",
+        "file": "superset/utils/public_interfaces.py",
+        "code": "42 def compute_func_hash(function: Callable[..., Any]) -\u003e str:\n43     hashed = md5()  # noqa: S324\n4",
+        "details": "(1/1) * Possible vulnerability detected: Use of weak MD4, MD5, or SHA1 hash for security. Consider usedforsecurity=False",
+        "securityTool": "Bandit",
+        "language": "Python",
+        "severity": "HIGH",
+        "type": "Vulnerability",
+        "commitAuthor": "-",
+        "commitEmail": "-",
+        "commitHash": "-",
+        "commitMessage": "-",
+        "commitDate": "-",
+        "rule_id": "B324",
+        "vulnHash": "00e141122889d9bf3ddfba8a3abbee06cbee52e65dc58d5956ccfec23271644f",
+        "deprecatedHashes": [
+          "46cd45a4e19dfd261f3a31d300374c8f27951069fd4022efd21b0731f160e3ca",
+          "8d03dc7be9ffb013031be0306994d75f993e3409a12b9cd4a635367d6353a143"
+        ],
+        "securityToolVersion": "",
+        "securityToolInfoUri": ""
+      }
+    },
+    {
+      "vulnerabilityID": "00000000-0000-0000-0000-000000000000",
+      "analysisID": "579e2208-1bc5-4335-b764-c5d63468caee",
+      "createdAt": "2025-07-10T08:29:18.155917173Z",
+      "vulnerabilities": {
+        "vulnerabilityID": "974e80e5-5052-421d-bced-6141eedba9c7",
+        "line": "49",
+        "column": "0",
+        "confidence": "HIGH",
+        "file": "superset/utils/public_interfaces.py",
+        "code": "48 def compute_class_hash(class_: Callable[..., Any]) -\u003e str:\n49     hashed = md5()  # noqa: S324\n50",
+        "details": "(1/1) * Possible vulnerability detected: Use of weak MD4, MD5, or SHA1 hash for security. Consider usedforsecurity=False",
+        "securityTool": "Bandit",
+        "language": "Python",
+        "severity": "HIGH",
+        "type": "Vulnerability",
+        "commitAuthor": "-",
+        "commitEmail": "-",
+        "commitHash": "-",
+        "commitMessage": "-",
+        "commitDate": "-",
+        "rule_id": "B324",
+        "vulnHash": "d1fface4f7ed6a4074e0f769da2958a488c8e0a05749e6a46869b6a292cb4c25",
+        "deprecatedHashes": [
+          "35c39a684ad12778422e703934a8a8373dec28d911eb4783de771e6c2679f2eb",
+          "dfcf66cfd420b8963d833cc60c3a34e25c5c0e297618c43d03273a36ee2ffb8f"
+        ],
+        "securityToolVersion": "",
+        "securityToolInfoUri": ""
+      }
+    },
+    {
+      "vulnerabilityID": "00000000-0000-0000-0000-000000000000",
+      "analysisID": "579e2208-1bc5-4335-b764-c5d63468caee",
+      "createdAt": "2025-07-10T08:29:18.18474625Z",
+      "vulnerabilities": {
+        "vulnerabilityID": "949447ac-188e-4e10-ba25-bb4cc4e13b04",
+        "line": "27",
+        "column": "0",
+        "confidence": "HIGH",
+        "file": "tests/unit_tests/fixtures/bash_mock.py",
+        "code": "26             bash_command,\n27             shell=True,\n28             capture_output=True,\n29      ",
+        "details": "(1/1) * Possible vulnerability detected: subprocess call with shell=True identified, security issue.",
+        "securityTool": "Bandit",
+        "language": "Python",
+        "severity": "HIGH",
+        "type": "Vulnerability",
+        "commitAuthor": "-",
+        "commitEmail": "-",
+        "commitHash": "-",
+        "commitMessage": "-",
+        "commitDate": "-",
+        "rule_id": "B602",
+        "vulnHash": "eba4faa1322cc238b4a4e4ba7a3de2795d74931ad1047d096c8cc79d806037e8",
+        "deprecatedHashes": [
+          "1b8dfe951ee0322ec55c6dc803650af1d8e08d5866ac02e361f66219aae17039",
+          "ba426265a3108d1fbf8afd6617a774e52dd26f42755f709ab50e29ba83ec61b4"
+        ],
+        "securityToolVersion": "",
+        "securityToolInfoUri": ""
+      }
+    }
+  ]
+}
