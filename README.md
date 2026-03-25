@@ -62,24 +62,6 @@ This project goes further by:
 
 ---
 
-## ⚙️ Reproducibility 
-
-### 1. Clone Repo
-
-```bash
-git clone https://github.com/your-username/secure-code-analysis-sast-comparison.git
-cd secure-code-analysis-sast-comparison
-```
-
-### 2. Run Full Scan
-
-```bash
-chmod +x scripts/full_scan.sh
-./scripts/full_scan.sh
-```
-
----
-
 ## 🔍 Key Findings
 
 ### 🔴 Critical
@@ -147,9 +129,7 @@ chmod +x scripts/full_scan.sh
 ## 📁 Project Structure
 
 ```
-scripts/     → automated scanning
-scans/       → raw outputs
-results/     → processed insights
+scans/       → scan outputs
 docs/        → detailed documentation
 ```
 
