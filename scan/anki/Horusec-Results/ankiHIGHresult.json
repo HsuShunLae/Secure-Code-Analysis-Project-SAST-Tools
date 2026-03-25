@@ -1,0 +1,450 @@
+{
+  "version": "v2.9.0-beta.3",
+  "id": "02fc473b-24f5-47fa-8b39-d8fe4a628593",
+  "repositoryID": "00000000-0000-0000-0000-000000000000",
+  "repositoryName": "",
+  "workspaceID": "00000000-0000-0000-0000-000000000000",
+  "workspaceName": "",
+  "status": "success",
+  "errors": "",
+  "createdAt": "2025-07-08T19:29:35.768130769Z",
+  "finishedAt": "2025-07-08T19:35:24.871624426Z",
+  "analysisVulnerabilities": [
+    {
+      "vulnerabilityID": "00000000-0000-0000-0000-000000000000",
+      "analysisID": "02fc473b-24f5-47fa-8b39-d8fe4a628593",
+      "createdAt": "2025-07-08T19:35:24.871726226Z",
+      "vulnerabilities": {
+        "vulnerabilityID": "24e5ab35-decf-45b9-ad20-1b59b2d85936",
+        "line": "0",
+        "column": "0",
+        "confidence": "MEDIUM",
+        "file": "docs/syncserver/Dockerfile",
+        "code": "root user",
+        "details": "(1/1) * Possible vulnerability detected: MissConfiguration\n      Running containers with 'root' user can lead to a container escape situation. It is a best practice to run containers as non-root users, which can be done by adding a 'USER' statement to the Dockerfile.\n      Message: Specify at least 1 USER command in Dockerfile with non-root user as argument\n      Resolution: Add 'USER \u003cnon root user name\u003e' line to the Dockerfile\n      References: [https://docs.docker.com/develop/develop-images/dockerfile_best-practices/ https://avd.aquasec.com/appshield/ds002]",
+        "securityTool": "Trivy",
+        "language": "Generic",
+        "severity": "HIGH",
+        "type": "Vulnerability",
+        "commitAuthor": "-",
+        "commitEmail": "-",
+        "commitHash": "-",
+        "commitMessage": "-",
+        "commitDate": "-",
+        "rule_id": "",
+        "vulnHash": "c7903df5dd946786bb6f07282f96b2622fe280390bc2b2cc39bd261736de5318",
+        "deprecatedHashes": [
+          "ba2e4817fa3a005367148408f49fb1c4d6d72e73b8cae882c5ec58073f141ea8",
+          "d531373dc990381333cd62cfea397e7f07f85bd1da230e58e5c00c43c287e739"
+        ],
+        "securityToolVersion": "",
+        "securityToolInfoUri": ""
+      }
+    },
+    {
+      "vulnerabilityID": "00000000-0000-0000-0000-000000000000",
+      "analysisID": "02fc473b-24f5-47fa-8b39-d8fe4a628593",
+      "createdAt": "2025-07-08T19:35:24.871920025Z",
+      "vulnerabilities": {
+        "vulnerabilityID": "796ce841-845f-49be-9c06-fd073c48d121",
+        "line": "0",
+        "column": "0",
+        "confidence": "MEDIUM",
+        "file": "docs/syncserver/Dockerfile.distroless",
+        "code": "root user",
+        "details": "(1/1) * Possible vulnerability detected: MissConfiguration\n      Running containers with 'root' user can lead to a container escape situation. It is a best practice to run containers as non-root users, which can be done by adding a 'USER' statement to the Dockerfile.\n      Message: Specify at least 1 USER command in Dockerfile with non-root user as argument\n      Resolution: Add 'USER \u003cnon root user name\u003e' line to the Dockerfile\n      References: [https://docs.docker.com/develop/develop-images/dockerfile_best-practices/ https://avd.aquasec.com/appshield/ds002]",
+        "securityTool": "Trivy",
+        "language": "Generic",
+        "severity": "HIGH",
+        "type": "Vulnerability",
+        "commitAuthor": "-",
+        "commitEmail": "-",
+        "commitHash": "-",
+        "commitMessage": "-",
+        "commitDate": "-",
+        "rule_id": "",
+        "vulnHash": "a249538fa54fdb4aaee88322110d7ceb48a155b7a6315f23d784911a3453b13f",
+        "deprecatedHashes": [
+          "87e2af16c6175bddb50d58057160fd5266ea049ce47c0cc661220df53aa63014",
+          "1fbe6d33216611e24fc4f1a98603fcc6b83ae07b16fb77510606a1d654f42281"
+        ],
+        "securityToolVersion": "",
+        "securityToolInfoUri": ""
+      }
+    },
+    {
+      "vulnerabilityID": "00000000-0000-0000-0000-000000000000",
+      "analysisID": "02fc473b-24f5-47fa-8b39-d8fe4a628593",
+      "createdAt": "2025-07-08T19:35:24.872201325Z",
+      "vulnerabilities": {
+        "vulnerabilityID": "91eb0066-c44b-40a4-ac82-4f738f7d3db6",
+        "line": "2393",
+        "column": "0",
+        "confidence": "MEDIUM",
+        "file": "yarn.lock",
+        "code": "\"canvas@npm:empty-npm-package@1.0.0\":\n\tInstalled Version: \"1.0.0\"\n\tUpdate to Version: \"1.6.11\" for fix this issue.",
+        "details": "(1/1) * Possible vulnerability detected: A buffer overflow is present in canvas version \u003c= 1.6.9, which could lead to a Denial of Service or execution of arbitrary code when it processes a user-provided image.\nPrimaryURL: https://avd.aquasec.com/nvd/cve-2020-8215.\nCwe Links: (https://cwe.mitre.org/data/definitions/120.html)",
+        "securityTool": "Trivy",
+        "language": "Generic",
+        "severity": "HIGH",
+        "type": "Vulnerability",
+        "commitAuthor": "-",
+        "commitEmail": "-",
+        "commitHash": "-",
+        "commitMessage": "-",
+        "commitDate": "-",
+        "rule_id": "CVE-2020-8215",
+        "vulnHash": "5a7bf80b4fa4eff2cda39dfb0218ba68a08faa8ade94f7ae53f191fcc9950ab0",
+        "deprecatedHashes": [
+          "93938fb271212ca7d04937b9e8b23e14c742e3b23e693864f600e5024541e873",
+          "aa07ec61beab346101bf1ce41aa89f1ced1e283896d47ddd28e6f1bd79509d08",
+          "b279663f687cd5e411c468e554da903750b2468bec9d7cc76fcc99b1749be388",
+          "712540e2672bd3dd10751be67dd67d5d9ebdbefb2a985ef6c881fc6bcc94b456"
+        ],
+        "securityToolVersion": "",
+        "securityToolInfoUri": ""
+      }
+    },
+    {
+      "vulnerabilityID": "00000000-0000-0000-0000-000000000000",
+      "analysisID": "02fc473b-24f5-47fa-8b39-d8fe4a628593",
+      "createdAt": "2025-07-08T19:35:24.872940724Z",
+      "vulnerabilities": {
+        "vulnerabilityID": "f0c18290-139e-4859-b9ad-3228439920ec",
+        "line": "5",
+        "column": "8",
+        "confidence": "MEDIUM",
+        "file": "qt/aqt/data/web/js/webview.ts",
+        "code": "document.addEventListener(\"keydown\", function(evt: KeyboardEvent) {",
+        "details": "(1/1) * Possible vulnerability detected: Origins should be verified during cross-origin communications\nBrowsers allow message exchanges between Window objects of different origins. Because any window can send / receive messages from other window it is important to verify the sender's / receiver's identity: When sending message with postMessage method, the identity's receiver should be defined (the wildcard keyword (*) should not be used).\nWhen receiving message with message event, the sender's identity should be verified using the origin and possibly source properties. For more information checkout the OWASP A2:2017 (https://owasp.org/www-project-top-ten/2017/A2_2017-Broken_Authentication) and (https://developer.mozilla.org/en-US/docs/Web/API/Window/postMessage) advisory.",
+        "securityTool": "HorusecEngine",
+        "language": "JavaScript",
+        "severity": "HIGH",
+        "type": "Vulnerability",
+        "commitAuthor": "-",
+        "commitEmail": "-",
+        "commitHash": "-",
+        "commitMessage": "-",
+        "commitDate": "-",
+        "rule_id": "HS-JAVASCRIPT-11",
+        "vulnHash": "e8dd866ec2a6f34e9c70bb350b9b73877c9caedb5c3bfa469b598db99f865cdc",
+        "deprecatedHashes": [
+          "4511b477e14e85615828d7a214a1c0fdc732e6f3d9067df0c310f380d6d2dffd",
+          "7009715248dec64f4d766249a645caa7b1e6844315c0ba8f19938d3906a718d5"
+        ],
+        "securityToolVersion": "",
+        "securityToolInfoUri": ""
+      }
+    },
+    {
+      "vulnerabilityID": "00000000-0000-0000-0000-000000000000",
+      "analysisID": "02fc473b-24f5-47fa-8b39-d8fe4a628593",
+      "createdAt": "2025-07-08T19:35:24.873034323Z",
+      "vulnerabilities": {
+        "vulnerabilityID": "168440be-6518-4fe9-b8c6-18c6289df338",
+        "line": "37",
+        "column": "12",
+        "confidence": "MEDIUM",
+        "file": "ts/lib/tag-editor/tags.ts",
+        "code": "id: Math.random().toString(36).substring(2),",
+        "details": "(1/1) * Possible vulnerability detected: No use weak random number generator\nWhen software generates predictable values in a context requiring unpredictability, it may be possible for an attacker to guess the next value that will be generated, and use this guess to impersonate another user or access sensitive information. As the Math.random() function relies on a weak pseudorandom number generator, this function should not be used for security-critical applications or for protecting sensitive data. In such context, a cryptographically strong pseudorandom number generator (CSPRNG) should be used instead. For more information checkout the CWE-338 (https://cwe.mitre.org/data/definitions/338.html) advisory.",
+        "securityTool": "HorusecEngine",
+        "language": "JavaScript",
+        "severity": "HIGH",
+        "type": "Vulnerability",
+        "commitAuthor": "-",
+        "commitEmail": "-",
+        "commitHash": "-",
+        "commitMessage": "-",
+        "commitDate": "-",
+        "rule_id": "HS-JAVASCRIPT-6",
+        "vulnHash": "318d184307fedd0335982ebb25b23605ac71cc9c2f08d857391076fea80ed58f",
+        "deprecatedHashes": [
+          "3880c1838340fad66e4ff569643575308f77470dee84da1631ae810b0205ae79",
+          "b3b359e8f68d5cc43c215a574b90c2c7bbc891735f5b201997aee4b933ce296e"
+        ],
+        "securityToolVersion": "",
+        "securityToolInfoUri": ""
+      }
+    },
+    {
+      "vulnerabilityID": "00000000-0000-0000-0000-000000000000",
+      "analysisID": "02fc473b-24f5-47fa-8b39-d8fe4a628593",
+      "createdAt": "2025-07-08T19:35:24.87489992Z",
+      "vulnerabilities": {
+        "vulnerabilityID": "a873f524-3b17-4a58-ad82-8c26657b3097",
+        "line": "23",
+        "column": "12",
+        "confidence": "HIGH",
+        "file": "ts/lib/generated/post.ts",
+        "code": "alert(err);",
+        "details": "(1/1) * Possible vulnerability detected: Alert statements should not be used\nalert(...) as well as confirm(...) and prompt(...) can be useful for debugging during development, but in production mode this kind of pop-up could expose sensitive information to attackers, and should never be displayed. For more information checkout the CWE-489 (https://cwe.mitre.org/data/definitions/489.html) advisory.",
+        "securityTool": "HorusecEngine",
+        "language": "JavaScript",
+        "severity": "HIGH",
+        "type": "Vulnerability",
+        "commitAuthor": "-",
+        "commitEmail": "-",
+        "commitHash": "-",
+        "commitMessage": "-",
+        "commitDate": "-",
+        "rule_id": "HS-JAVASCRIPT-16",
+        "vulnHash": "2fe8b209c8d5925aed4fd465dd4ece1bfc4b16433d8791b064695cc4c1cd6ffa",
+        "deprecatedHashes": [
+          "bdf6cb38ca8913f12a98f91fbd59dc981bccd110d3cfe416cbb6e414dadf750d",
+          "fc414acb2c892d58c00c0bc5e3f45a636a5e8cd96240e5911a6476023533e51f"
+        ],
+        "securityToolVersion": "",
+        "securityToolInfoUri": ""
+      }
+    },
+    {
+      "vulnerabilityID": "00000000-0000-0000-0000-000000000000",
+      "analysisID": "02fc473b-24f5-47fa-8b39-d8fe4a628593",
+      "createdAt": "2025-07-08T19:35:24.87514432Z",
+      "vulnerabilities": {
+        "vulnerabilityID": "764f7a95-997e-4b1c-b4c3-854e95299db3",
+        "line": "85",
+        "column": "12",
+        "confidence": "HIGH",
+        "file": "ts/editor/base.ts",
+        "code": "alert(\"unexpected editor type\");",
+        "details": "(1/1) * Possible vulnerability detected: Alert statements should not be used\nalert(...) as well as confirm(...) and prompt(...) can be useful for debugging during development, but in production mode this kind of pop-up could expose sensitive information to attackers, and should never be displayed. For more information checkout the CWE-489 (https://cwe.mitre.org/data/definitions/489.html) advisory.",
+        "securityTool": "HorusecEngine",
+        "language": "JavaScript",
+        "severity": "HIGH",
+        "type": "Vulnerability",
+        "commitAuthor": "-",
+        "commitEmail": "-",
+        "commitHash": "-",
+        "commitMessage": "-",
+        "commitDate": "-",
+        "rule_id": "HS-JAVASCRIPT-16",
+        "vulnHash": "b50207395d06e79bf7ce5080982c5b22014247197cc38efd4d30ff7db385ddd4",
+        "deprecatedHashes": [
+          "d97129a9249a99fe9ed3ac91f3996e6d484a0c29aed4da42180c0c6900613dfe",
+          "fc5524e793f7678d3fb2e617fec5107f08f4e7acbec2de99d83b4100bd29bfea"
+        ],
+        "securityToolVersion": "",
+        "securityToolInfoUri": ""
+      }
+    },
+    {
+      "vulnerabilityID": "00000000-0000-0000-0000-000000000000",
+      "analysisID": "02fc473b-24f5-47fa-8b39-d8fe4a628593",
+      "createdAt": "2025-07-08T19:35:24.87523912Z",
+      "vulnerabilities": {
+        "vulnerabilityID": "06cbb5b2-e52e-481a-ad33-c20849e1ddfa",
+        "line": "151",
+        "column": "12",
+        "confidence": "MEDIUM",
+        "file": "ts/editable/content-editable.ts",
+        "code": "editable.addEventListener(\"keydown\", (evt: KeyboardEvent) =\u003e {",
+        "details": "(1/1) * Possible vulnerability detected: Origins should be verified during cross-origin communications\nBrowsers allow message exchanges between Window objects of different origins. Because any window can send / receive messages from other window it is important to verify the sender's / receiver's identity: When sending message with postMessage method, the identity's receiver should be defined (the wildcard keyword (*) should not be used).\nWhen receiving message with message event, the sender's identity should be verified using the origin and possibly source properties. For more information checkout the OWASP A2:2017 (https://owasp.org/www-project-top-ten/2017/A2_2017-Broken_Authentication) and (https://developer.mozilla.org/en-US/docs/Web/API/Window/postMessage) advisory.",
+        "securityTool": "HorusecEngine",
+        "language": "JavaScript",
+        "severity": "HIGH",
+        "type": "Vulnerability",
+        "commitAuthor": "-",
+        "commitEmail": "-",
+        "commitHash": "-",
+        "commitMessage": "-",
+        "commitDate": "-",
+        "rule_id": "HS-JAVASCRIPT-11",
+        "vulnHash": "43413d18510a7efba56b7e7bc1e48ec5e7e14f6dd0f6572b43810d84af7e40b5",
+        "deprecatedHashes": [
+          "1899f7434a6717c4c14abcfb4589cf49444ece03044ccbc267c41c1b2c50dd85",
+          "04fb7102a55ec99ec2c4fa2b23992dbf05bce261cf692dfb815f7085585da333"
+        ],
+        "securityToolVersion": "",
+        "securityToolInfoUri": ""
+      }
+    },
+    {
+      "vulnerabilityID": "00000000-0000-0000-0000-000000000000",
+      "analysisID": "02fc473b-24f5-47fa-8b39-d8fe4a628593",
+      "createdAt": "2025-07-08T19:35:24.87533302Z",
+      "vulnerabilities": {
+        "vulnerabilityID": "7c7994dd-f5e9-44e6-b2e2-878a348a0386",
+        "line": "184",
+        "column": "12",
+        "confidence": "HIGH",
+        "file": "ts/routes/change-notetype/lib.ts",
+        "code": "alert(\"No changes to save\");",
+        "details": "(1/1) * Possible vulnerability detected: Alert statements should not be used\nalert(...) as well as confirm(...) and prompt(...) can be useful for debugging during development, but in production mode this kind of pop-up could expose sensitive information to attackers, and should never be displayed. For more information checkout the CWE-489 (https://cwe.mitre.org/data/definitions/489.html) advisory.",
+        "securityTool": "HorusecEngine",
+        "language": "JavaScript",
+        "severity": "HIGH",
+        "type": "Vulnerability",
+        "commitAuthor": "-",
+        "commitEmail": "-",
+        "commitHash": "-",
+        "commitMessage": "-",
+        "commitDate": "-",
+        "rule_id": "HS-JAVASCRIPT-16",
+        "vulnHash": "23cf82e534966df146867e256e592b3f985cd4c9a671067390ba4e0e7d28471e",
+        "deprecatedHashes": [
+          "5d6cf5b964f1444a19f150a59c45859277b94fd0bb53aa2a2734e741127c3434",
+          "0852a774152127096e92949668947cf1e8ce7a10ffe2da1446de5ecb22bf6320"
+        ],
+        "securityToolVersion": "",
+        "securityToolInfoUri": ""
+      }
+    },
+    {
+      "vulnerabilityID": "00000000-0000-0000-0000-000000000000",
+      "analysisID": "02fc473b-24f5-47fa-8b39-d8fe4a628593",
+      "createdAt": "2025-07-08T19:35:24.87542662Z",
+      "vulnerabilities": {
+        "vulnerabilityID": "8fb81ea1-15b4-49fd-9058-58cab1e4ae6c",
+        "line": "250",
+        "column": "8",
+        "confidence": "MEDIUM",
+        "file": "ts/reviewer/index.ts",
+        "code": "document.addEventListener(\"focusout\", (event) =\u003e {",
+        "details": "(1/1) * Possible vulnerability detected: Origins should be verified during cross-origin communications\nBrowsers allow message exchanges between Window objects of different origins. Because any window can send / receive messages from other window it is important to verify the sender's / receiver's identity: When sending message with postMessage method, the identity's receiver should be defined (the wildcard keyword (*) should not be used).\nWhen receiving message with message event, the sender's identity should be verified using the origin and possibly source properties. For more information checkout the OWASP A2:2017 (https://owasp.org/www-project-top-ten/2017/A2_2017-Broken_Authentication) and (https://developer.mozilla.org/en-US/docs/Web/API/Window/postMessage) advisory.",
+        "securityTool": "HorusecEngine",
+        "language": "JavaScript",
+        "severity": "HIGH",
+        "type": "Vulnerability",
+        "commitAuthor": "-",
+        "commitEmail": "-",
+        "commitHash": "-",
+        "commitMessage": "-",
+        "commitDate": "-",
+        "rule_id": "HS-JAVASCRIPT-11",
+        "vulnHash": "dfda199b8f9226a233f32e373dbf580b41c655ef00f1ad8df5f08baf0b28b131",
+        "deprecatedHashes": [
+          "38f429f640f0eedb8a7139444499eaac1353ab23fd5a6841b59dc16fb5f4a9ea",
+          "6948988a2f3b5c8a671260231e866cedb0a969403a1bc00377eedfc67314461f"
+        ],
+        "securityToolVersion": "",
+        "securityToolInfoUri": ""
+      }
+    },
+    {
+      "vulnerabilityID": "00000000-0000-0000-0000-000000000000",
+      "analysisID": "02fc473b-24f5-47fa-8b39-d8fe4a628593",
+      "createdAt": "2025-07-08T19:35:24.875818519Z",
+      "vulnerabilities": {
+        "vulnerabilityID": "aac4476f-74bd-4862-81e5-05ef6c8f01ad",
+        "line": "47",
+        "column": "10",
+        "confidence": "MEDIUM",
+        "file": "ts/routes/image-occlusion/review.ts",
+        "code": "window.addEventListener(\"load\", () =\u003e {",
+        "details": "(1/1) * Possible vulnerability detected: Origins should be verified during cross-origin communications\nBrowsers allow message exchanges between Window objects of different origins. Because any window can send / receive messages from other window it is important to verify the sender's / receiver's identity: When sending message with postMessage method, the identity's receiver should be defined (the wildcard keyword (*) should not be used).\nWhen receiving message with message event, the sender's identity should be verified using the origin and possibly source properties. For more information checkout the OWASP A2:2017 (https://owasp.org/www-project-top-ten/2017/A2_2017-Broken_Authentication) and (https://developer.mozilla.org/en-US/docs/Web/API/Window/postMessage) advisory.",
+        "securityTool": "HorusecEngine",
+        "language": "JavaScript",
+        "severity": "HIGH",
+        "type": "Vulnerability",
+        "commitAuthor": "-",
+        "commitEmail": "-",
+        "commitHash": "-",
+        "commitMessage": "-",
+        "commitDate": "-",
+        "rule_id": "HS-JAVASCRIPT-11",
+        "vulnHash": "b8a10f23d6d51e7dd0e4822c39ab4c77f5ada76d3949c055b43414d289301d3c",
+        "deprecatedHashes": [
+          "ed4d3531d59f59833b1e5639ee4203fddaf47d7fa0134830954b781a8b4074d2",
+          "ded4a0b426c2719f797db2ebe450e22d5ba424eec9ef95313712a81cfb43321e"
+        ],
+        "securityToolVersion": "",
+        "securityToolInfoUri": ""
+      }
+    },
+    {
+      "vulnerabilityID": "00000000-0000-0000-0000-000000000000",
+      "analysisID": "02fc473b-24f5-47fa-8b39-d8fe4a628593",
+      "createdAt": "2025-07-08T19:35:24.882868709Z",
+      "vulnerabilities": {
+        "vulnerabilityID": "2c7e548e-50d1-48e2-aea4-c73beae500e9",
+        "line": "148",
+        "column": "0",
+        "confidence": "HIGH",
+        "file": "pylib/anki/utils.py",
+        "code": "147         data = data.encode(\"utf-8\")\n148     return sha1(data).hexdigest()\n149 \n",
+        "details": "(1/1) * Possible vulnerability detected: Use of weak MD4, MD5, or SHA1 hash for security. Consider usedforsecurity=False",
+        "securityTool": "Bandit",
+        "language": "Python",
+        "severity": "HIGH",
+        "type": "Vulnerability",
+        "commitAuthor": "-",
+        "commitEmail": "-",
+        "commitHash": "-",
+        "commitMessage": "-",
+        "commitDate": "-",
+        "rule_id": "B324",
+        "vulnHash": "d56d1d9731f619a59ab0bceb206eb12869f53a19b2429f3de32904f2e977b20a",
+        "deprecatedHashes": [
+          "3e86180354329b62e698c4c2ae9be1e0782ca962ce25a09bd1f3757f7bd13f32",
+          "95107984505544ade624cc43afbe3c22bb27238ec775e921031addf30cf27fc1"
+        ],
+        "securityToolVersion": "",
+        "securityToolInfoUri": ""
+      }
+    },
+    {
+      "vulnerabilityID": "00000000-0000-0000-0000-000000000000",
+      "analysisID": "02fc473b-24f5-47fa-8b39-d8fe4a628593",
+      "createdAt": "2025-07-08T19:35:24.885876004Z",
+      "vulnerabilities": {
+        "vulnerabilityID": "c533d898-f5b7-4000-a07c-e46e66084f24",
+        "line": "46",
+        "column": "0",
+        "confidence": "HIGH",
+        "file": "pylib/tests/test_collection.py",
+        "code": "45     assertException(Exception, lambda: aopen(newPath))\n46     os.chmod(newPath, 0o666)\n47     os.",
+        "details": "(1/1) * Possible vulnerability detected: Chmod setting a permissive mask 0o666 on file (newPath).",
+        "securityTool": "Bandit",
+        "language": "Python",
+        "severity": "HIGH",
+        "type": "Vulnerability",
+        "commitAuthor": "-",
+        "commitEmail": "-",
+        "commitHash": "-",
+        "commitMessage": "-",
+        "commitDate": "-",
+        "rule_id": "B103",
+        "vulnHash": "25fc6dafe615dcab0519ae6b60021c182f00cde3dbc1ea5615e24574fc7a03cf",
+        "deprecatedHashes": [
+          "c180e7995343de737ec5830eee2d64ce259be95897259d427526dd81662ff37a",
+          "986283d174ff6e12686ed15a6a4c4ebcdcc3aee9ee9db54e2a58c7c110dea63d"
+        ],
+        "securityToolVersion": "",
+        "securityToolInfoUri": ""
+      }
+    },
+    {
+      "vulnerabilityID": "00000000-0000-0000-0000-000000000000",
+      "analysisID": "02fc473b-24f5-47fa-8b39-d8fe4a628593",
+      "createdAt": "2025-07-08T19:35:25.139822019Z",
+      "vulnerabilities": {
+        "vulnerabilityID": "475d9a5e-e8cc-43af-aae9-c3ab87826f07",
+        "line": "414",
+        "column": "0",
+        "confidence": "HIGH",
+        "file": "qt/aqt/theme.py",
+        "code": "413                 cmd,\n414                 shell=True,\n415                 check=True,\n416        ",
+        "details": "(1/1) * Possible vulnerability detected: subprocess call with shell=True identified, security issue.",
+        "securityTool": "Bandit",
+        "language": "Python",
+        "severity": "HIGH",
+        "type": "Vulnerability",
+        "commitAuthor": "-",
+        "commitEmail": "-",
+        "commitHash": "-",
+        "commitMessage": "-",
+        "commitDate": "-",
+        "rule_id": "B602",
+        "vulnHash": "35297ef4cfca4e1f0c462d98e5e9da5083268b74d1d8f0a33d6d066a988b2d67",
+        "deprecatedHashes": [
+          "92ca05eac3d3a2c847eb20636ddf5a07cac70c394deb44aab923e15340e1cce1",
+          "647b12b4a8e2ad41c5dc6d124e9df7fb7cac8970c6805c3cfdc3df0f2a8a432d"
+        ],
+        "securityToolVersion": "",
+        "securityToolInfoUri": ""
+      }
+    }
+  ]
+}
